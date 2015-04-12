@@ -1,1 +1,7 @@
-<h1>Todays's menu</h1>
+<h1><%=@title %></h1>
+
+<ul>
+  <% @meals.each do |meal| %>
+    <li><%=meal.name %></li>
+  <% end %>
+</ul>
